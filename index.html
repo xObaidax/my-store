@@ -16,8 +16,22 @@
     <!-- width=device-width = عرض الصفحة يساوي عرض الشاشة -->
     <!-- initial-scale=1.0 = اعرض بالحجم الطبيعي -->
 
-    <title>X8</title>
+    <title>PX8</title>
     <!-- title = اسم الموقع الذي يظهر في تبويب المتصفح -->
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- link = ربط مصدر خارجي -->
+<!-- rel="preconnect" = اتصل بخادم Google Fonts مسبقاً لتسريع التحميل -->
+<!-- href = رابط خادم Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- href = رابط خط Inter -->
+<!-- rel="stylesheet" = هذا ملف تصميم -->
+
+<link rel="stylesheet" href="css/style.css">
+<!-- link = ربط ملف خارجي -->
+<!-- rel="stylesheet" = هذا ملف تصميم CSS -->
+<!-- href = اذهب إلى مجلد css وافتح ملف style.css -->
 
 </head>
 
@@ -28,17 +42,65 @@
     <header>
     <!-- header = الشريط الذي يظهر في أعلى كل صفحة -->
     <!-- يحتوي على الشعار وشريط البحث وأيقونة السلة -->
-     <h1>Welcome to Obaida Store</h1>
+     <h1>PX8 Gym Tracker</h1>
     <!-- h1 = أكبر عنوان في الصفحة -->
-    <!-- Welcome to Obaida Store = النص الذي سيظهر للمستخدم -->
+    <!-- PX8 Gym Tracker = النص الذي سيظهر للمستخدم -->
     </header>
 
      <main>
     <!-- main = القسم الرئيسي الذي يحتوي على محتوى الصفحة -->
     <!-- يحتوي على المنتجات والعروض والتصنيفات -->
-     <p>The best store</p>
+     
+     <p>Track your workouts</p>
     <!-- p = فقرة نصية عادية -->
-    <!-- The best supplements store = وصف المتجر -->
+    <!-- Track your workouts = وصف المتجر -->
+
+  <section class="muscles-grid">
+    <!-- section = قسم مستقل داخل الصفحة -->
+    <!-- class = اسم نعطيه للقسم لنتحكم به لاحقاً في CSS -->
+    <!-- muscles-grid = اسم الكلاس الذي سيرتب العضلات في شبكة -->
+
+     <h2>Select Muscle</h2>
+
+    <div class="muscle-card">
+    <!-- div = صندوق يحتوي على عضلة واحدة -->
+    <!-- class="muscle-card" = اسم الكلاس لتنسيقه لاحقاً في CSS -->
+        <p>Back</p>
+        <!-- p = اسم العضلة -->
+    </div>
+
+    <div class="muscle-card">
+        <p>Biceps</p>
+    </div>
+
+    <div class="muscle-card">
+        <p>Chest</p>
+    </div>
+
+    <div class="muscle-card">
+        <p>Triceps</p>
+    </div>
+
+    <div class="muscle-card">
+        <p>Forearms</p>
+    </div>
+
+    <div class="muscle-card">
+        <p>Shoulders</p>
+    </div>
+
+    <div class="muscle-card">
+        <p>Legs</p>
+    </div>
+
+    <div class="muscle-card">
+        <p>Abs</p>
+    </div>
+
+        
+
+</section>
+
     </main>
 
      <footer>
@@ -46,14 +108,6 @@
     <!-- يحتوي على معلومات التواصل وروابط مهمة -->
     </footer>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<!-- link = ربط مصدر خارجي -->
-<!-- rel="preconnect" = اتصل بخادم Google Fonts مسبقاً لتسريع التحميل -->
-<!-- href = رابط خادم Google Fonts -->
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<!-- href = رابط خط Inter -->
-<!-- rel="stylesheet" = هذا ملف تصميم -->
 
     </body>
 
