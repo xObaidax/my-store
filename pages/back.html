@@ -29,7 +29,7 @@
     <header>
     <!-- header = الشريط العلوي للصفحة -->
 
-        <a href="../index.html">← Back</a>
+        <a href="../index.html">← Home</a>
         <!-- a = رابط للتنقل بين الصفحات -->
         <!-- href="../index.html" = ارجع للصفحة الرئيسية -->
         <!-- ← Back = نص الرابط الذي سيظهر للمستخدم -->
@@ -40,13 +40,95 @@
     </header>
 
     <main>
-    <!-- main = محتوى صفحة عضلة الظهر -->
-    </main>
 
-    <footer>
-    <!-- footer = الشريط السفلي -->
-    </footer>
+    <section class="exercises-list">
+    <!-- exercises-list = قسم قائمة التمارين -->
 
+        <h2>Exercises</h2>
+        <!-- h2 = عنوان القسم -->
+
+        <div class="exercise-item">
+        <!-- exercise-item = صندوق تمرين واحد -->
+
+            <button class="exercise-toggle">
+            <!-- button = زر للطي والفتح -->
+            <!-- exercise-toggle = كلاس الزر -->
+                Pull Ups ▼
+            </button>
+
+            <div class="exercise-details">
+            <!-- exercise-details = تفاصيل التمرين -->
+
+                <div class="set-form">
+                <!-- set-form = نموذج تسجيل جولة -->
+
+                    <input type="number" placeholder="Weight (kg)">
+                    <!-- input = حقل إدخال الوزن -->
+
+                    <input type="number" placeholder="Reps">
+                    <!-- input = حقل إدخال التكرارات -->
+
+                    <select>
+                    <!-- select = قائمة منسدلة -->
+                        <option>✅ Success</option>
+                        <option>❌ Failed</option>
+                    </select>
+
+                    <button class="add-set">+ Add Set</button>
+                    <!-- button = زر إضافة جولة -->
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+<script src="../js/main.js"></script>
 </body>
 
 </html>
+<div class="exercise-item">
+    <button class="exercise-toggle">Deadlift ▼</button>
+    <div class="exercise-details">
+        <div class="set-form">
+            <input type="number" placeholder="Weight (kg)">
+            <input type="number" placeholder="Reps">
+            <select>
+                <option>✅ Success</option>
+                <option>❌ Failed</option>
+            </select>
+            <button class="add-set">+ Add Set</button>
+        </div>
+    </div>
+</div>
+
+<div class="exercise-item">
+    <button class="exercise-toggle">Bent Over Row ▼</button>
+    <div class="exercise-details">
+        <div class="set-form">
+            <input type="number" placeholder="Weight (kg)">
+            <input type="number" placeholder="Reps">
+            <select>
+                <option>✅ Success</option>
+                <option>❌ Failed</option>
+            </select>
+            <button class="add-set">+ Add Set</button>
+        </div>
+    </div>
+</div>
+
+<div class="exercise-item">
+    <button class="exercise-toggle">Lat Pulldown ▼</button>
+    <div class="exercise-details">
+        <div class="set-form">
+            <input type="number" placeholder="Weight (kg)">
+            <input type="number" placeholder="Reps">
+            <select>
+                <option>✅ Success</option>
+                <option>❌ Failed</option>
+            </select>
+            <button class="add-set">+ Add Set</button>
+        </div>
+    </div>
+</div>

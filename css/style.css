@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    /* margin = المسافة خارج العنصر */
+    /* 0 = احذف كل المسافات الافتراضية */
+
+    padding: 0;
+    /* padding = المسافة داخل العنصر */
+    /* 0 = احذف كل الحشو الافتراضي */
+
+    box-sizing: border-box;
+    /* box-sizing = طريقة حساب حجم العنصر */
+    /* border-box = احسب الحجم بما فيه الحدود والحشو */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* font-family = نوع الخط المستخدم */
+    /* Inter = الخط الذي اخترناه */
+    /* sans-serif = خط احتياطي إذا لم يتحمل Inter */
+
+    background-color: #1A1A2E;
+    /* background-color = لون خلفية الصفحة كاملة */
+    /* #1A1A2E = أزرق داكن */
+
+    color: #FFFFFF;
+    /* color = لون النص الافتراضي */
+    /* #FFFFFF = أبيض */
+}
+
+header {
+    background-color: #16213E;
+    /* background-color = لون خلفية الهيدر */
+    /* #16213E = أزرق أعمق من الخلفية */
+
+    padding: 20px;
+    /* padding = مسافة داخلية من الحواف */
+    /* 20px = 20 بكسل من كل الجهات */
+
+    text-align: center;
+    /* text-align = محاذاة النص */
+    /* center = وسّط النص */
+}
+
+h1 {
+    color: #FFFFFF;
+    /* color = لون العنوان الرئيسي */
+    /* #FFFFFF = أبيض */
+
+    font-size: 24px;
+    /* font-size = حجم الخط */
+    /* 24px = 24 بكسل */
+}
+
+main {
+    padding: 20px;
+    /* padding = مسافة داخلية حول المحتوى الرئيسي */
+    /* 20px = 20 بكسل من كل الجهات */
+}
+
+.muscles-grid {
+    display: grid;
+    /* display = طريقة عرض العناصر */
+    /* grid = شبكة منظمة */
+
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns = عدد الأعمدة */
+    /* repeat(2, 1fr) = عمودان متساويان */
+
+    gap: 16px;
+    /* gap = المسافة بين البطاقات */
+    /* 16px = 16 بكسل */
+
+    margin-top: 20px;
+    /* margin-top = مسافة من الأعلى */
+    /* 20px = 20 بكسل */
+}
+
+.muscle-card {
+    background-color: #16213E;
+    /* background-color = لون خلفية البطاقة */
+    /* #16213E = أزرق داكن */
+
+    border-radius: 12px;
+    /* border-radius = تدوير الزوايا */
+    /* 12px = 12 بكسل */
+
+    padding: 20px;
+    /* padding = مسافة داخلية في البطاقة */
+    /* 20px = 20 بكسل */
+
+    text-align: center;
+    /* text-align = توسيط النص */
+    /* center = في المنتصف */
+
+    cursor: pointer;
+    /* cursor = شكل المؤشر عند التحويم */
+    /* pointer = يتحول لإصبع عند الضغط */
+
+    transition: 0.3s;
+    /* transition = حركة ناعمة عند التفاعل */
+    /* 0.3s = مدة الحركة */
+}
+
+.muscle-card:hover {
+    background-color: #0F3460;
+    /* background-color = تغيير لون البطاقة عند التحويم */
+    /* #0F3460 = أزرق أفتح قليلًا */
+}
+
+.muscle-card a {
+    color: #FFFFFF;
+    /* color = لون نص الرابط */
+    /* #FFFFFF = أبيض */
+
+    text-decoration: none;
+    /* text-decoration = تزيين النص */
+    /* none = احذف الخط تحت الرابط */
+
+    font-size: 18px;
+    /* font-size = حجم النص */
+    /* 18px = 18 بكسل */
+
+    font-weight: 600;
+    /* font-weight = سُمك الخط */
+    /* 600 = نص شبه غامق */
+}
+
+footer {
+    background-color: #16213E;
+    /* background-color = لون خلفية الفوتر */
+    /* #16213E = أزرق داكن */
+
+    padding: 20px;
+    /* padding = مسافة داخلية */
+    /* 20px = 20 بكسل */
+
+    text-align: center;
+    /* text-align = توسيط النص */
+    /* center = في المنتصف */
+
+    margin-top: 40px;
+    /* margin-top = مسافة من الأعلى */
+    /* 40px = 40 بكسل */
+}
+
+.exercises-list {
+    max-width: 600px;
+    margin: 0 auto;
+    /* توسيط قائمة التمارين مع حد أقصى للعرض */
+}
+
+.exercise-toggle {
+    width: 100%;
+    background-color: #16213E;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    transition: 0.3s;
+    /* زر التمرين كامل العرض مع حركة ناعمة */
+}
+
+.exercise-toggle:hover {
+    background-color: #0F3460;
+    /* تغيير اللون عند التحويم */
+}
+
+.exercise-details {
+    display: none;
+    background-color: #16213E;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 8px;
+    /* التفاصيل مخفية افتراضياً */
+}
+
+.exercise-details.open {
+    display: block;
+    /* إظهار التفاصيل عند الضغط */
+}
+
+.set-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* نموذج الجولة عمودي */
+}
+
+.set-form input, .set-form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1A1A2E;
+    color: #FFFFFF;
+    font-size: 14px;
+    /* حقول الإدخال */
+}
+
+.add-set {
+    background-color: #D97706;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    /* زر إضافة جولة برتقالي */
+}
+
+.add-set:hover {
+    background-color: #B45309;
+    /* لون أغمق عند التحويم */
+}
